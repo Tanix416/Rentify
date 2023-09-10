@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Rentify</title>
+    <link rel="stylesheet" href="styles/signup.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Main-->
+    <section class="main">
+      <!--Showcase-->
+      <div class="showcase">
+        <!--Title-->
+        <div class="main-title">
+          <h2>
+            <span class="bg-text">Login</span>
+            <span class="fg-text">Log<span>In</span></span>
+          </h2>
+        </div>
+
+        <!--Form-->
+        <div class="form-container">
+          <form action="loginDB.jsp" method="post">
+            <input type="email" name="email" placeholder="Email" required />
+            <input
+              type="password"
+              name="passwd"
+              placeholder="Password"
+              required
+            />
+            <input type="submit" name="" value="Login" />
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

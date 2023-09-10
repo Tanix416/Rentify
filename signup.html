@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup | Rentify</title>
+    <script src="./checkEmail.js"></script>
+    <link rel="stylesheet" href="styles/signup.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Main-->
+    <section class="main">
+      <!--Showcase-->
+      <div class="showcase">
+        <!--Title-->
+        <div class="main-title">
+          <h2>
+            <span class="bg-text">Signup</span>
+            <span class="fg-text">Sign<span>Up</span></span>
+          </h2>
+        </div>
+
+        <!--Form-->
+        <div class="form-container">
+          <form action="signupDB.jsp" name="registration" method="post">
+            <input type="text" name="name" placeholder="Name" required />
+            <input
+              type="number"
+              name="phno"
+              placeholder="Phone Number"
+              required
+            />
+            <input type="email" name="email" id="email" placeholder="Email" required onkeyup="func1(this.value)"/>
+            <div id="result1"></div>
+            <input
+              type="password"
+              name="passwd"
+              placeholder="Password"
+              required
+            />
+            <input type="submit" value="Signup" />
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

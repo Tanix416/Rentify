@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit | Rentify</title>
+    <script src="./checkEmail.js"></script>
+    <link rel="stylesheet" href="styles/edit.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Main-->
+    <section class="main">
+      <!--Showcase-->
+      <div class="showcase">
+        <!--Title-->
+        <div class="main-title">
+          <h2>
+            <span class="bg-text">Create</span>
+            <span class="fg-text">Cre<span>ate</span></span>
+          </h2>
+        </div>
+
+        <!--Form-->
+        <div class="form-container">
+          <form action="renter_newDB.jsp" name="registration" method="post">
+            <input type="text" name="name" placeholder="Name" required />
+            <input
+              type="text"
+              name="roomNo"
+              placeholder="Room Number"
+              required
+            />
+            <input
+              type="number"
+              name="phno"
+              placeholder="Phone Number"
+              required
+            />
+            <input
+              type="email"
+              name="renter_email"
+              id="renter_email"
+              placeholder="Email"
+              onkeyup="func2(this.value)"
+            />
+            <div id="result2"></div>
+            <input
+              type="number"
+              name="amt"
+              placeholder="Rent Amount"
+              required
+            />
+
+            <input type="submit" name="" value="Create" />
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
